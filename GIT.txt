@@ -1,0 +1,29 @@
+GIT
+第1步：创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
+
+$ ssh-keygen -t rsa -C "793983383@qq.com"\
+出现如下图就是成功了
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/mac/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: //密码是你的 qq 邮件密码
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/mac/.ssh/id_rsa.
+Your public key has been saved in /Users/mac/.ssh/id_rsa.pub.
+The key fingerprint is:
+78:d6:f5:c6:63:07:9f:08:41:c5:62:e9:7e:48:cc:f1 793983383@qq.com
+The key's randomart image is:
++--[ RSA 2048]----+
+|          .o+.   |
+|           =..   |
+|          =.= .  |
+|       . . *.E.o.|
+|      . S + ..*.o|
+|       o   o + o |
+|            .    |
+|                 |
+|                 |
++-----------------+
+
